@@ -8,10 +8,14 @@ in this project we have 3 main stages
 
 
 
+
+
 ## REWARD ##
 eat food 	+10
 game over 	-10
 else 		  0
+
+
 
 
 
@@ -21,14 +25,20 @@ else 		  0
 [0,0,1]=>left turn
 
 
+
+
 ## STATES ##
 [danger straight,danger right,danger left,				# the sate is an 11 value array the danger tells me where can i go so i can only go where the danger is 0
  direction left, direction right,direction up, direction down,		and the direcion is all zeros ecsept the the one where the head is moving 
  food left, food right, food up, food down]				and the food tells the model where the food is location again all of those are boolian nbrs so 0 or 1
 
 
+
+
  ## MODEL ##
 neural network with the 11 state values as input and a hidden layer and the outup are 3 neurons which [ , , ] and those can be any nunber and the result will bacially be the max off them so [9,7,4] will bacially give me the movement of straight or [1,0,0] since 9 is max
+
+
 
 
 ## TRAINING ### DEEP (Q) LEARNING ##
@@ -41,10 +51,11 @@ neural network with the 11 state values as input and a hidden layer and the outu
    3. measure reward
    4. update Q Value(+train model)
 
+      
+
 		## Loss ##### Bellman Equation ##### Mean Square Error ##
 newQ(s,a) = Q(s,a) + A[R(s,a) + B*max(Q'(s',a')) - Q(s,a)] ====> Q    = model.predict(state0)=====>	loss = (Q-newQ)^2
 													newQ = R + B.max(Q(state1))
-
 
 
 where :	newQ(s,a) is the new Q value for thate sate and action
@@ -60,8 +71,10 @@ where :	newQ(s,a) is the new Q value for thate sate and action
 
 
 ## to activate ##
-anaconda   	cd ...
-		conda activate snake_env
+anaconda   	cd ...				
+		conda activate snake_env	# dont forget to pip install the important libraries (pytourch, numpy, matplotlip, pygame)
 		code .
 		python agent.py			#to run agent.py	
+
+  
 ##   ENJOY   ##
