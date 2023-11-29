@@ -8,30 +8,30 @@ in this project we have 3 main stages
 
 
 
-	## REWARD ##
+## REWARD ##
 eat food 	+10
 game over 	-10
 else 		  0
 
 
 
-	## MOVEMENT ##
+## MOVEMENT ##
 [1,0,0]=>straight			# so now we dont run into the problem where the snake will turn 180 degrees in the same square and eat it self + it is only 3 action so 
 [0,1,0]=>rightturn			less computational effort for the agent
 [0,0,1]=>left turn
 
 
-	 ## STATES ##
+## STATES ##
 [danger straight,danger right,danger left,				# the sate is an 11 value array the danger tells me where can i go so i can only go where the danger is 0
  direction left, direction right,direction up, direction down,		and the direcion is all zeros ecsept the the one where the head is moving 
  food left, food right, food up, food down]				and the food tells the model where the food is location again all of those are boolian nbrs so 0 or 1
 
 
- 	### MODEL ###
+ ## MODEL ##
 neural network with the 11 state values as input and a hidden layer and the outup are 3 neurons which [ , , ] and those can be any nunber and the result will bacially be the max off them so [9,7,4] will bacially give me the movement of straight or [1,0,0] since 9 is max
 
 
-		## TRAINING ### DEEP (Q) LEARNING ##
+## TRAINING ### DEEP (Q) LEARNING ##
    Q Value = Quality of action 
 
    0. init Q Value(init model)
@@ -59,9 +59,9 @@ where :	newQ(s,a) is the new Q value for thate sate and action
 
 
 
-			 ## to activate ##
+## to activate ##
 anaconda   	cd ...
 		conda activate snake_env
 		code .
 		python agent.py			#to run agent.py	
-			########   ENJOY   ########
+##   ENJOY   ##
