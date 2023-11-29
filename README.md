@@ -3,8 +3,8 @@
 
 in this project we have 3 main stages 
 	1 is the game with pygame which basically doesa loop and return the state of the game and according to that we should know the reward, if game over or not and the score
-	2 is the model with PyTourch whs is basically predicts the action that should be made according to the state we are in in this is where the ai will learn
-	3 is the agent which is basically the combination of both it knows the state of the game and forwords it to the model , first it does the training basically tryies to get a prediction from the model and makes it and gets the feedback from the game to know if it was bad or good and then retrun it to the agent
+ 	2 is the model with PyTourch whs is basically predicts the action that should be made according to the state we are in in this is where the ai will learn
+  	3 is the agent which is basically the combination of both it knows the state of the game and forwords it to the model , first it does the training basically tryies to get a prediction from the model and makes it and gets the feedback from the game to know if it was bad or good and then retrun it to the agent
 
 
 
@@ -20,9 +20,9 @@ else 		  0
 
 
 ## MOVEMENT ##
-[1,0,0]=>straight
-[0,1,0]=>rightturn
-[0,0,1]=>left turn
+ 1 [1,0,0]=>straight
+ 2 [0,1,0]=>rightturn
+ 3 [0,0,1]=>left turn
 so now we dont run into the problem where the snake will turn 180 degrees in the same square and eat it self + it is only 3 action so less computational effort for the agent 
 
 
