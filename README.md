@@ -20,9 +20,10 @@ else 		  0
 
 
 ## MOVEMENT ##
-[1,0,0]=>straight			# so now we dont run into the problem where the snake will turn 180 degrees in the same square and eat it self + it is only 3 action so 
-[0,1,0]=>rightturn			less computational effort for the agent
+[1,0,0]=>straight
+[0,1,0]=>rightturn
 [0,0,1]=>left turn
+so now we dont run into the problem where the snake will turn 180 degrees in the same square and eat it self + it is only 3 action so less computational effort for the agent 
 
 
 
