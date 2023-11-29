@@ -74,7 +74,7 @@ where :	newQ(s,a) is the new Q value for thate sate and action
 anaconda   	cd ...				
 		conda activate snake_env	# dont forget to pip install the important libraries (pytourch, numpy, matplotlip, pygame)
 		code .
-		python agent.py			#to run agent.py	
+		python agent.py			#to run the ai	
 
   
 ##   ENJOY   ##
