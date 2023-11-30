@@ -1,4 +1,4 @@
-# Snake
+# Snake AI
 
 
 in this project we have 3 main stages 
